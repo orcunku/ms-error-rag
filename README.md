@@ -10,6 +10,9 @@ than to be a production support tool.
 
 ## Results
 ![Windows Error Assistant](screenshot.png)
+
+Answer relevancy (RAGAS, 8 questions): **0.94**
+
 | Metric | Dense only | Hybrid |
 |---|---|---|
 | Exact error-code recall@3 (50 queries) | 56% | **100%** |
