@@ -24,7 +24,7 @@ def exact_code_recall(r, n=50, seed=0):
     for i in sample:
         code = r.chunks[i]["error_code"]
         q = f"how do I fix error {code}"
-        qv = r.model.encode([q], normalize_embeddings=True)[0]
+        qv = r.encode(q)
         if i in np.argsort(r.embeddings @ qv)[::-1][:3]:
             dense += 1
         if any(c["error_code"] == code for c, _ in r.search(q)):
