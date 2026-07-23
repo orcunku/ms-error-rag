@@ -1,6 +1,4 @@
 import json
-from sentence_transformers import SentenceTransformer
-import chromadb
 from src import config
 
 
@@ -21,48 +19,10 @@ def build_chunks(errors):
     return chunks
 
 
-def ingest():
+if __name__ == "__main__":
     with open(config.DATA_FILE) as f:
         errors = json.load(f)
-
     chunks = build_chunks(errors)
-    print(f"built {len(chunks)} chunks")
-
-    model = SentenceTransformer(config.EMBED_MODEL)
-    embeddings = model.encode(
-        [c["text"] for c in chunks],
-        show_progress_bar=True,
-        normalize_embeddings=True,
-    )
-
-    client = chromadb.PersistentClient(path=config.CHROMA_PATH)
-    try:
-        client.delete_collection(config.COLLECTION_NAME)
-    except Exception:
-        pass
-
-    collection = client.create_collection(
-        name=config.COLLECTION_NAME,
-        metadata={"hnsw:space": "cosine"},
-    )
-    collection.add(
-        ids=[f"err_{i}" for i in range(len(chunks))],
-        documents=[c["text"] for c in chunks],
-        embeddings=embeddings.tolist(),
-        metadatas=[
-            {"error_code": c["error_code"],
-             "os_version": c["os_version"],
-             "product": c["product"]}
-            for c in chunks
-        ],
-    )
-
-    # BM25 rebuilds from these at query time
     with open(config.ROOT / "data" / "chunks.json", "w") as f:
         json.dump(chunks, f, indent=2)
-
-    print(f"stored {collection.count()} documents in {config.CHROMA_PATH}")
-
-
-if __name__ == "__main__":
-    ingest()
+    print(f"wrote {len(chunks)} chunks")

@@ -1,0 +1,41 @@
+name: Retrieval Evaluation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install fastembed rank-bm25 numpy
+
+      - name: Generate data
+        run: python -m src.data_gen
+
+      - name: Build embeddings
+        run: |
+          python -c "
+          from fastembed import TextEmbedding
+          import json, numpy as np
+          from src.ingestion import build_chunks
+          errors = json.load(open('data/errors.json'))
+          chunks = build_chunks(errors)
+          json.dump(chunks, open('data/chunks.json', 'w'))
+          m = TextEmbedding(model_name='BAAI/bge-small-en-v1.5')
+          np.save('data/embeddings.npy', np.array(list(m.embed([c['text'] for c in chunks]))))
+          "
+
+      - name: Run benchmark
+        run: python -m eval.benchmark
