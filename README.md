@@ -90,3 +90,17 @@ python -m src.ingestion
 export GROQ_API_KEY="your_key"
 python app.py
 ```
+
+## Deployment constraints
+
+Deployed to a 512MB container, which drove three changes:
+
+- **Dropped ChromaDB.** Retrieval ran entirely on a NumPy array and BM25; the
+  vector database was installed and loaded but never queried.
+- **Replaced sentence-transformers with fastembed.** Same model, ONNX runtime
+  instead of PyTorch, substantially lower memory.
+- **Moved embedding computation to build time.** Recomputing 300 embeddings at
+  every startup was the remaining memory spike.
+
+The first of these is worth stating plainly: the vector database was unnecessary
+for a corpus this size, and removing it simplified the system.
