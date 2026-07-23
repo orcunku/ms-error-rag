@@ -45,4 +45,5 @@ with gr.Blocks(title="Windows Error Assistant") as demo:
     submit.click(respond, [question, os_version], [answer_box, meta_box])
     question.submit(respond, [question, os_version], [answer_box, meta_box])
 
-demo.launch()
+import os
+demo.launch(server_port=int(os.environ.get("PORT", 7860)))
