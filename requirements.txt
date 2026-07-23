@@ -1,6 +1,5 @@
 groq
 fastembed
-chromadb
 rank-bm25
 numpy
 gradio
