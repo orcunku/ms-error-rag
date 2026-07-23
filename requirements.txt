@@ -1,0 +1,8 @@
+groq
+sentence-transformers
+chromadb
+rank-bm25
+numpy
+gradio
+fastapi
+uvicorn

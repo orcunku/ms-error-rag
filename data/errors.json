@@ -1,0 +1,2402 @@
+[
+  {
+    "error_code": "0x83087743",
+    "os_version": "Windows 10",
+    "product": "Permissions",
+    "symptom": "Error 0x83087743: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to broken ownership after a profile migration.",
+    "solution": "1. Take ownership of the folder. 2. Identify and stop the locking process. 3. Reset permissions inheritance."
+  },
+  {
+    "error_code": "0x86706D7E",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x86706D7E: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a damaged system file.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Boot into recovery and run Startup Repair. 3. Boot in safe mode and roll back the driver."
+  },
+  {
+    "error_code": "0x846A32C3",
+    "os_version": "Windows 10",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x846A32C3: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to a failing storage controller driver.",
+    "solution": "1. Restore the affected files from backup. 2. Check disk health with SMART diagnostics. 3. Update the storage controller driver."
+  },
+  {
+    "error_code": "0x83C29B62",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x83C29B62: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a missing framework component.",
+    "solution": "1. Repair the framework installation. 2. Run the framework repair tool. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x83C8EB5B",
+    "os_version": "Windows 10",
+    "product": "Networking",
+    "symptom": "Error 0x83C8EB5B: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a misconfigured proxy setting.",
+    "solution": "1. Disable power management on the adapter. 2. Flush the DNS cache. 3. Reset the TCP/IP stack with netsh."
+  },
+  {
+    "error_code": "0x875EC87A",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x875EC87A: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Repair the framework installation. 2. Re-register the framework with the runtime. 3. Run the framework repair tool."
+  },
+  {
+    "error_code": "0x826A6FCE",
+    "os_version": "Windows 11",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x826A6FCE: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to an interrupted write during shutdown.",
+    "solution": "1. Check disk health with SMART diagnostics. 2. Update the storage controller driver. 3. Run chkdsk with repair flags."
+  },
+  {
+    "error_code": "0x8DCB74F2",
+    "os_version": "Windows 11",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8DCB74F2: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Identify the leaking process in Resource Monitor. 2. Disable unnecessary startup entries. 3. Run Windows Memory Diagnostic."
+  },
+  {
+    "error_code": "0x82CCE803",
+    "os_version": "Windows 10",
+    "product": "Windows Store",
+    "symptom": "Error 0x82CCE803: app downloads fail to complete.",
+    "cause": "This typically occurs due to insufficient space in the app install location.",
+    "solution": "1. Re-register the store app package. 2. Free space on the install drive. 3. Sign out and back into the store account."
+  },
+  {
+    "error_code": "0x85E08539",
+    "os_version": "Windows 11",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x85E08539: the system reports it is not activated.",
+    "cause": "This typically occurs due to a hardware change invalidating the license binding.",
+    "solution": "1. Restart the licensing service. 2. Run the activation troubleshooter. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x8AF03B97",
+    "os_version": "Windows 10",
+    "product": "Windows Store",
+    "symptom": "Error 0x8AF03B97: app downloads fail to complete.",
+    "cause": "This typically occurs due to a signed-out account state.",
+    "solution": "1. Reset the store cache with wsreset. 2. Free space on the install drive. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x844F58D6",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x844F58D6: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a damaged system file.",
+    "solution": "1. Rebuild the boot configuration data. 2. Uninstall the most recent update from recovery. 3. Boot in safe mode and roll back the driver."
+  },
+  {
+    "error_code": "0x8E3772A0",
+    "os_version": "Windows 10",
+    "product": "Printing",
+    "symptom": "Error 0x8E3772A0: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Restart the print spooler service. 2. Reinstall the printer driver. 3. Stop the spooler and clear the print queue folder."
+  },
+  {
+    "error_code": "0x81721A27",
+    "os_version": "Windows 11",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x81721A27: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to insufficient page file size.",
+    "solution": "1. Run Windows Memory Diagnostic. 2. Disable unnecessary startup entries. 3. Increase the page file size."
+  },
+  {
+    "error_code": "0x8F7FD633",
+    "os_version": "Windows Server 2022",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8F7FD633: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Disable unnecessary startup entries. 2. Increase the page file size. 3. Run Windows Memory Diagnostic."
+  },
+  {
+    "error_code": "0x8131CA37",
+    "os_version": "Windows 11",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8131CA37: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Increase the page file size. 2. Identify the leaking process in Resource Monitor. 3. Disable unnecessary startup entries."
+  },
+  {
+    "error_code": "0x88E72E31",
+    "os_version": "Windows 11",
+    "product": "Device Drivers",
+    "symptom": "Error 0x88E72E31: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a failed digital signature check.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Disable driver signature enforcement temporarily. 3. Install the vendor-signed driver manually."
+  },
+  {
+    "error_code": "0x8F6C15C0",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x8F6C15C0: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a lost connection to the print server.",
+    "solution": "1. Re-add the printer connection. 2. Restart the print spooler service. 3. Reinstall the printer driver."
+  },
+  {
+    "error_code": "0x8F469611",
+    "os_version": "Windows Server 2022",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8F469611: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to insufficient page file size.",
+    "solution": "1. Run Windows Memory Diagnostic. 2. Identify the leaking process in Resource Monitor. 3. Disable unnecessary startup entries."
+  },
+  {
+    "error_code": "0x825227C3",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x825227C3: update installation fails partway through.",
+    "cause": "This typically occurs due to a pending reboot from a prior update.",
+    "solution": "1. Run the Update troubleshooter. 2. Restart the Windows Update service. 3. Clear the SoftwareDistribution folder."
+  },
+  {
+    "error_code": "0x8A86A78C",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x8A86A78C: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Reset permissions inheritance. 2. Identify and stop the locking process. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x80E32684",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Boot",
+    "symptom": "Error 0x80E32684: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a damaged system file.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Boot into recovery and run Startup Repair. 3. Boot in safe mode and roll back the driver."
+  },
+  {
+    "error_code": "0x8E909348",
+    "os_version": "Windows Server 2019",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8E909348: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a conflicting driver left from a prior install.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Disable driver signature enforcement temporarily. 3. Install the vendor-signed driver manually."
+  },
+  {
+    "error_code": "0x86A68F81",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Store",
+    "symptom": "Error 0x86A68F81: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Reset the store cache with wsreset. 2. Re-register the store app package. 3. Sign out and back into the store account."
+  },
+  {
+    "error_code": "0x8A485ED0",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x8A485ED0: update installation fails partway through.",
+    "cause": "This typically occurs due to a blocked connection to the update servers.",
+    "solution": "1. Clear the SoftwareDistribution folder. 2. Run DISM RestoreHealth followed by SFC scannow. 3. Restart the Windows Update service."
+  },
+  {
+    "error_code": "0x84D419B1",
+    "os_version": "Windows 10",
+    "product": "Windows Store",
+    "symptom": "Error 0x84D419B1: app downloads fail to complete.",
+    "cause": "This typically occurs due to insufficient space in the app install location.",
+    "solution": "1. Re-register the store app package. 2. Reset the store cache with wsreset. 3. Free space on the install drive."
+  },
+  {
+    "error_code": "0x8D4755D0",
+    "os_version": "Windows Server 2022",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8D4755D0: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a corrupted framework installation.",
+    "solution": "1. Install the required framework version. 2. Run the framework repair tool. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x853C1F76",
+    "os_version": "Windows 11",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x853C1F76: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to bad sectors on the physical disk.",
+    "solution": "1. Update the storage controller driver. 2. Check disk health with SMART diagnostics. 3. Restore the affected files from backup."
+  },
+  {
+    "error_code": "0x86CA828B",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x86CA828B: update installation fails partway through.",
+    "cause": "This typically occurs due to corrupted update cache.",
+    "solution": "1. Run DISM RestoreHealth followed by SFC scannow. 2. Restart the Windows Update service. 3. Run the Update troubleshooter."
+  },
+  {
+    "error_code": "0x85813DBA",
+    "os_version": "Windows Server 2022",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x85813DBA: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to bad sectors on the physical disk.",
+    "solution": "1. Update the storage controller driver. 2. Restore the affected files from backup. 3. Run chkdsk with repair flags."
+  },
+  {
+    "error_code": "0x81D06BD2",
+    "os_version": "Windows 10",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x81D06BD2: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to an interrupted write during shutdown.",
+    "solution": "1. Restore the affected files from backup. 2. Update the storage controller driver. 3. Check disk health with SMART diagnostics."
+  },
+  {
+    "error_code": "0x89DAC946",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x89DAC946: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a version mismatch with the application target.",
+    "solution": "1. Re-register the framework with the runtime. 2. Run the framework repair tool. 3. Install the required framework version."
+  },
+  {
+    "error_code": "0x80996DAE",
+    "os_version": "Windows Server 2022",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x80996DAE: the system reports it is not activated.",
+    "cause": "This typically occurs due to a licensing service that failed to start.",
+    "solution": "1. Verify the edition matches the key. 2. Restart the licensing service. 3. Run the activation troubleshooter."
+  },
+  {
+    "error_code": "0x829A2797",
+    "os_version": "Windows 10",
+    "product": "Permissions",
+    "symptom": "Error 0x829A2797: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to inherited permissions removed by policy.",
+    "solution": "1. Reset permissions inheritance. 2. Take ownership of the folder. 3. Identify and stop the locking process."
+  },
+  {
+    "error_code": "0x82ED6CFC",
+    "os_version": "Windows 10",
+    "product": "Printing",
+    "symptom": "Error 0x82ED6CFC: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a lost connection to the print server.",
+    "solution": "1. Restart the print spooler service. 2. Stop the spooler and clear the print queue folder. 3. Reinstall the printer driver."
+  },
+  {
+    "error_code": "0x85E173E4",
+    "os_version": "Windows Server 2022",
+    "product": "Networking",
+    "symptom": "Error 0x85E173E4: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to an adapter power-saving setting.",
+    "solution": "1. Clear the proxy configuration. 2. Disable power management on the adapter. 3. Reset the TCP/IP stack with netsh."
+  },
+  {
+    "error_code": "0x8E5FE878",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8E5FE878: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Re-register the framework with the runtime. 2. Run the framework repair tool. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x8978AA24",
+    "os_version": "Windows 11",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8978AA24: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a driver loaded too early in the boot sequence.",
+    "solution": "1. Rebuild the boot configuration data. 2. Boot into recovery and run Startup Repair. 3. Boot in safe mode and roll back the driver."
+  },
+  {
+    "error_code": "0x8DDAED16",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8DDAED16: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to an incomplete update applied at shutdown.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Rebuild the boot configuration data. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x8B9CD7F7",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x8B9CD7F7: update installation fails partway through.",
+    "cause": "This typically occurs due to a pending reboot from a prior update.",
+    "solution": "1. Restart the Windows Update service. 2. Run the Update troubleshooter. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x8C5E40C0",
+    "os_version": "Windows 11",
+    "product": "Office Applications",
+    "symptom": "Error 0x8C5E40C0: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a damaged template file.",
+    "solution": "1. Start the application in safe mode. 2. Run an online repair of the installation. 3. Disable all add-ins and re-enable one at a time."
+  },
+  {
+    "error_code": "0x818CA6EA",
+    "os_version": "Windows Server 2022",
+    "product": "Device Drivers",
+    "symptom": "Error 0x818CA6EA: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a conflicting driver left from a prior install.",
+    "solution": "1. Install the vendor-signed driver manually. 2. Remove the old driver package with pnputil. 3. Disable driver signature enforcement temporarily."
+  },
+  {
+    "error_code": "0x8F01B721",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8F01B721: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a driver loaded too early in the boot sequence.",
+    "solution": "1. Boot into recovery and run Startup Repair. 2. Boot in safe mode and roll back the driver. 3. Uninstall the most recent update from recovery."
+  },
+  {
+    "error_code": "0x84F36E8B",
+    "os_version": "Windows 11",
+    "product": "Networking",
+    "symptom": "Error 0x84F36E8B: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a corrupted TCP/IP stack.",
+    "solution": "1. Reset the TCP/IP stack with netsh. 2. Disable power management on the adapter. 3. Flush the DNS cache."
+  },
+  {
+    "error_code": "0x809CC627",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x809CC627: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a corrupted boot configuration entry.",
+    "solution": "1. Boot into recovery and run Startup Repair. 2. Uninstall the most recent update from recovery. 3. Rebuild the boot configuration data."
+  },
+  {
+    "error_code": "0x8DB2A0DF",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x8DB2A0DF: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Start the application in safe mode. 2. Disable all add-ins and re-enable one at a time. 3. Run an online repair of the installation."
+  },
+  {
+    "error_code": "0x858FED8A",
+    "os_version": "Windows Server 2022",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x858FED8A: the system reports it is not activated.",
+    "cause": "This typically occurs due to a licensing service that failed to start.",
+    "solution": "1. Restart the licensing service. 2. Run the activation troubleshooter. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x8CA0FA5F",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x8CA0FA5F: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to an outdated printer driver.",
+    "solution": "1. Restart the print spooler service. 2. Re-add the printer connection. 3. Reinstall the printer driver."
+  },
+  {
+    "error_code": "0x880627DF",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Store",
+    "symptom": "Error 0x880627DF: app downloads fail to complete.",
+    "cause": "This typically occurs due to a signed-out account state.",
+    "solution": "1. Sign out and back into the store account. 2. Re-register the store app package. 3. Free space on the install drive."
+  },
+  {
+    "error_code": "0x8297C79B",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Update",
+    "symptom": "Error 0x8297C79B: update installation fails partway through.",
+    "cause": "This typically occurs due to a blocked connection to the update servers.",
+    "solution": "1. Run DISM RestoreHealth followed by SFC scannow. 2. Restart the Windows Update service. 3. Run the Update troubleshooter."
+  },
+  {
+    "error_code": "0x8E898736",
+    "os_version": "Windows 11",
+    "product": "Office Applications",
+    "symptom": "Error 0x8E898736: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Run an online repair of the installation. 2. Start the application in safe mode. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x8F893697",
+    "os_version": "Windows 10",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8F893697: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to insufficient page file size.",
+    "solution": "1. Run Windows Memory Diagnostic. 2. Identify the leaking process in Resource Monitor. 3. Increase the page file size."
+  },
+  {
+    "error_code": "0x81194F30",
+    "os_version": "Windows Server 2022",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x81194F30: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to an interrupted write during shutdown.",
+    "solution": "1. Restore the affected files from backup. 2. Check disk health with SMART diagnostics. 3. Update the storage controller driver."
+  },
+  {
+    "error_code": "0x818F32CF",
+    "os_version": "Windows 11",
+    "product": "Device Drivers",
+    "symptom": "Error 0x818F32CF: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a version mismatch with the current OS build.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Install the vendor-signed driver manually. 3. Disable driver signature enforcement temporarily."
+  },
+  {
+    "error_code": "0x89273D7C",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Store",
+    "symptom": "Error 0x89273D7C: app downloads fail to complete.",
+    "cause": "This typically occurs due to insufficient space in the app install location.",
+    "solution": "1. Free space on the install drive. 2. Sign out and back into the store account. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x81366825",
+    "os_version": "Windows 11",
+    "product": "Windows Store",
+    "symptom": "Error 0x81366825: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Sign out and back into the store account. 2. Reset the store cache with wsreset. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x8EF91799",
+    "os_version": "Windows Server 2019",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x8EF91799: the system reports it is not activated.",
+    "cause": "This typically occurs due to a licensing service that failed to start.",
+    "solution": "1. Verify the edition matches the key. 2. Run the activation troubleshooter. 3. Re-enter the product key with slmgr."
+  },
+  {
+    "error_code": "0x83748421",
+    "os_version": "Windows Server 2022",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x83748421: the system reports it is not activated.",
+    "cause": "This typically occurs due to a hardware change invalidating the license binding.",
+    "solution": "1. Restart the licensing service. 2. Verify the edition matches the key. 3. Re-enter the product key with slmgr."
+  },
+  {
+    "error_code": "0x89C8FE21",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x89C8FE21: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Re-add the printer connection. 2. Reinstall the printer driver. 3. Restart the print spooler service."
+  },
+  {
+    "error_code": "0x870815FE",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x870815FE: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a corrupted boot configuration entry.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Boot into recovery and run Startup Repair. 3. Rebuild the boot configuration data."
+  },
+  {
+    "error_code": "0x8BDAA35A",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x8BDAA35A: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a lost connection to the print server.",
+    "solution": "1. Re-add the printer connection. 2. Reinstall the printer driver. 3. Restart the print spooler service."
+  },
+  {
+    "error_code": "0x81E2A8A3",
+    "os_version": "Windows Server 2022",
+    "product": ".NET Framework",
+    "symptom": "Error 0x81E2A8A3: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Re-register the framework with the runtime. 2. Run the framework repair tool. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x86BFE168",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Update",
+    "symptom": "Error 0x86BFE168: update installation fails partway through.",
+    "cause": "This typically occurs due to corrupted update cache.",
+    "solution": "1. Run the Update troubleshooter. 2. Run DISM RestoreHealth followed by SFC scannow. 3. Restart the Windows Update service."
+  },
+  {
+    "error_code": "0x87590D27",
+    "os_version": "Windows 11",
+    "product": "Windows Update",
+    "symptom": "Error 0x87590D27: update installation fails partway through.",
+    "cause": "This typically occurs due to a pending reboot from a prior update.",
+    "solution": "1. Clear the SoftwareDistribution folder. 2. Run the Update troubleshooter. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x898DFF7E",
+    "os_version": "Windows 11",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x898DFF7E: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to a memory leak in a background service.",
+    "solution": "1. Increase the page file size. 2. Disable unnecessary startup entries. 3. Identify the leaking process in Resource Monitor."
+  },
+  {
+    "error_code": "0x8DA8099F",
+    "os_version": "Windows Server 2019",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x8DA8099F: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to an interrupted write during shutdown.",
+    "solution": "1. Check disk health with SMART diagnostics. 2. Update the storage controller driver. 3. Restore the affected files from backup."
+  },
+  {
+    "error_code": "0x8CEA67C7",
+    "os_version": "Windows Server 2022",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8CEA67C7: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Re-register the framework with the runtime. 2. Repair the framework installation. 3. Install the required framework version."
+  },
+  {
+    "error_code": "0x84F14A3E",
+    "os_version": "Windows 10",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x84F14A3E: the system reports it is not activated.",
+    "cause": "This typically occurs due to a licensing service that failed to start.",
+    "solution": "1. Run the activation troubleshooter. 2. Re-enter the product key with slmgr. 3. Restart the licensing service."
+  },
+  {
+    "error_code": "0x842F8AC2",
+    "os_version": "Windows Server 2019",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x842F8AC2: the system reports it is not activated.",
+    "cause": "This typically occurs due to a mismatched product key edition.",
+    "solution": "1. Re-enter the product key with slmgr. 2. Verify the edition matches the key. 3. Restart the licensing service."
+  },
+  {
+    "error_code": "0x8127972D",
+    "os_version": "Windows Server 2022",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8127972D: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a corrupted framework installation.",
+    "solution": "1. Repair the framework installation. 2. Run the framework repair tool. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x8901A19B",
+    "os_version": "Windows 11",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8901A19B: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Run Windows Memory Diagnostic. 2. Increase the page file size. 3. Identify the leaking process in Resource Monitor."
+  },
+  {
+    "error_code": "0x85552C7F",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Store",
+    "symptom": "Error 0x85552C7F: app downloads fail to complete.",
+    "cause": "This typically occurs due to a signed-out account state.",
+    "solution": "1. Sign out and back into the store account. 2. Reset the store cache with wsreset. 3. Free space on the install drive."
+  },
+  {
+    "error_code": "0x80E952EB",
+    "os_version": "Windows Server 2019",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x80E952EB: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to a failing storage controller driver.",
+    "solution": "1. Restore the affected files from backup. 2. Update the storage controller driver. 3. Check disk health with SMART diagnostics."
+  },
+  {
+    "error_code": "0x86CF37CB",
+    "os_version": "Windows 10",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x86CF37CB: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to a failing storage controller driver.",
+    "solution": "1. Restore the affected files from backup. 2. Update the storage controller driver. 3. Check disk health with SMART diagnostics."
+  },
+  {
+    "error_code": "0x801F97B7",
+    "os_version": "Windows 11",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x801F97B7: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to filesystem corruption on the volume.",
+    "solution": "1. Check disk health with SMART diagnostics. 2. Restore the affected files from backup. 3. Update the storage controller driver."
+  },
+  {
+    "error_code": "0x819E1B42",
+    "os_version": "Windows 11",
+    "product": "Permissions",
+    "symptom": "Error 0x819E1B42: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to inherited permissions removed by policy.",
+    "solution": "1. Identify and stop the locking process. 2. Reset permissions inheritance. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x8B858F9A",
+    "os_version": "Windows 11",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8B858F9A: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a version mismatch with the current OS build.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Remove the old driver package with pnputil. 3. Disable driver signature enforcement temporarily."
+  },
+  {
+    "error_code": "0x8CB2C083",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x8CB2C083: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Restore the default access control list. 2. Reset permissions inheritance. 3. Identify and stop the locking process."
+  },
+  {
+    "error_code": "0x87F0A72E",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x87F0A72E: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a driver loaded too early in the boot sequence.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Boot in safe mode and roll back the driver. 3. Rebuild the boot configuration data."
+  },
+  {
+    "error_code": "0x819F3374",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Update",
+    "symptom": "Error 0x819F3374: update installation fails partway through.",
+    "cause": "This typically occurs due to insufficient disk space on the system partition.",
+    "solution": "1. Run DISM RestoreHealth followed by SFC scannow. 2. Run the Update troubleshooter. 3. Restart the Windows Update service."
+  },
+  {
+    "error_code": "0x83FD81B6",
+    "os_version": "Windows Server 2019",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x83FD81B6: the system reports it is not activated.",
+    "cause": "This typically occurs due to a hardware change invalidating the license binding.",
+    "solution": "1. Verify the edition matches the key. 2. Restart the licensing service. 3. Run the activation troubleshooter."
+  },
+  {
+    "error_code": "0x8BB1C863",
+    "os_version": "Windows 10",
+    "product": "Permissions",
+    "symptom": "Error 0x8BB1C863: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to broken ownership after a profile migration.",
+    "solution": "1. Restore the default access control list. 2. Take ownership of the folder. 3. Identify and stop the locking process."
+  },
+  {
+    "error_code": "0x87462667",
+    "os_version": "Windows Server 2019",
+    "product": "Office Applications",
+    "symptom": "Error 0x87462667: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Run an online repair of the installation. 2. Start the application in safe mode. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x8853040B",
+    "os_version": "Windows 10",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8853040B: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a version mismatch with the current OS build.",
+    "solution": "1. Remove the old driver package with pnputil. 2. Install the vendor-signed driver manually. 3. Disable driver signature enforcement temporarily."
+  },
+  {
+    "error_code": "0x814D32FE",
+    "os_version": "Windows Server 2022",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x814D32FE: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to bad sectors on the physical disk.",
+    "solution": "1. Restore the affected files from backup. 2. Update the storage controller driver. 3. Run chkdsk with repair flags."
+  },
+  {
+    "error_code": "0x819E01FC",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Store",
+    "symptom": "Error 0x819E01FC: app downloads fail to complete.",
+    "cause": "This typically occurs due to a signed-out account state.",
+    "solution": "1. Free space on the install drive. 2. Re-register the store app package. 3. Reset the store cache with wsreset."
+  },
+  {
+    "error_code": "0x82A4248A",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x82A4248A: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to an incomplete update applied at shutdown.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Uninstall the most recent update from recovery. 3. Rebuild the boot configuration data."
+  },
+  {
+    "error_code": "0x836DE7DA",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x836DE7DA: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a damaged system file.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Rebuild the boot configuration data. 3. Uninstall the most recent update from recovery."
+  },
+  {
+    "error_code": "0x8A8B4F22",
+    "os_version": "Windows 10",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x8A8B4F22: the system reports it is not activated.",
+    "cause": "This typically occurs due to an unreachable activation server.",
+    "solution": "1. Run the activation troubleshooter. 2. Verify the edition matches the key. 3. Restart the licensing service."
+  },
+  {
+    "error_code": "0x81A3DBD1",
+    "os_version": "Windows Server 2019",
+    "product": "Device Drivers",
+    "symptom": "Error 0x81A3DBD1: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to an unsigned driver package.",
+    "solution": "1. Install the vendor-signed driver manually. 2. Disable driver signature enforcement temporarily. 3. Remove the old driver package with pnputil."
+  },
+  {
+    "error_code": "0x864F73BB",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Store",
+    "symptom": "Error 0x864F73BB: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Reset the store cache with wsreset. 2. Sign out and back into the store account. 3. Free space on the install drive."
+  },
+  {
+    "error_code": "0x880589AB",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Store",
+    "symptom": "Error 0x880589AB: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Reset the store cache with wsreset. 2. Free space on the install drive. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x8026CDEA",
+    "os_version": "Windows Server 2019",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8026CDEA: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to an unsigned driver package.",
+    "solution": "1. Remove the old driver package with pnputil. 2. Disable driver signature enforcement temporarily. 3. Install the vendor-signed driver manually."
+  },
+  {
+    "error_code": "0x845128ED",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Update",
+    "symptom": "Error 0x845128ED: update installation fails partway through.",
+    "cause": "This typically occurs due to a blocked connection to the update servers.",
+    "solution": "1. Run DISM RestoreHealth followed by SFC scannow. 2. Restart the Windows Update service. 3. Run the Update troubleshooter."
+  },
+  {
+    "error_code": "0x83BD39F9",
+    "os_version": "Windows 10",
+    "product": "Networking",
+    "symptom": "Error 0x83BD39F9: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a stale DNS cache.",
+    "solution": "1. Flush the DNS cache. 2. Clear the proxy configuration. 3. Reset the TCP/IP stack with netsh."
+  },
+  {
+    "error_code": "0x896489A3",
+    "os_version": "Windows 11",
+    "product": "Networking",
+    "symptom": "Error 0x896489A3: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a misconfigured proxy setting.",
+    "solution": "1. Flush the DNS cache. 2. Reset the TCP/IP stack with netsh. 3. Disable power management on the adapter."
+  },
+  {
+    "error_code": "0x87B2C1D0",
+    "os_version": "Windows Server 2022",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x87B2C1D0: the system reports it is not activated.",
+    "cause": "This typically occurs due to a mismatched product key edition.",
+    "solution": "1. Verify the edition matches the key. 2. Run the activation troubleshooter. 3. Restart the licensing service."
+  },
+  {
+    "error_code": "0x8D93C0A5",
+    "os_version": "Windows 10",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8D93C0A5: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Disable unnecessary startup entries. 2. Run Windows Memory Diagnostic. 3. Increase the page file size."
+  },
+  {
+    "error_code": "0x87DC2C9A",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x87DC2C9A: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a corrupted boot configuration entry.",
+    "solution": "1. Rebuild the boot configuration data. 2. Boot in safe mode and roll back the driver. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x86BB4734",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x86BB4734: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a missing framework component.",
+    "solution": "1. Run the framework repair tool. 2. Repair the framework installation. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x8FEEAA4E",
+    "os_version": "Windows Server 2019",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8FEEAA4E: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a conflicting driver left from a prior install.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Remove the old driver package with pnputil. 3. Install the vendor-signed driver manually."
+  },
+  {
+    "error_code": "0x81B29EE1",
+    "os_version": "Windows 10",
+    "product": "Windows Store",
+    "symptom": "Error 0x81B29EE1: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Reset the store cache with wsreset. 2. Sign out and back into the store account. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x8CE1E6AF",
+    "os_version": "Windows 10",
+    "product": "Windows Store",
+    "symptom": "Error 0x8CE1E6AF: app downloads fail to complete.",
+    "cause": "This typically occurs due to insufficient space in the app install location.",
+    "solution": "1. Sign out and back into the store account. 2. Reset the store cache with wsreset. 3. Free space on the install drive."
+  },
+  {
+    "error_code": "0x82517EE5",
+    "os_version": "Windows Server 2022",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x82517EE5: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Run Windows Memory Diagnostic. 2. Increase the page file size. 3. Disable unnecessary startup entries."
+  },
+  {
+    "error_code": "0x81A2A3C9",
+    "os_version": "Windows Server 2019",
+    "product": "Office Applications",
+    "symptom": "Error 0x81A2A3C9: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a faulty add-in.",
+    "solution": "1. Run an online repair of the installation. 2. Rename the default template to force a rebuild. 3. Start the application in safe mode."
+  },
+  {
+    "error_code": "0x84B9C429",
+    "os_version": "Windows 11",
+    "product": "Windows Store",
+    "symptom": "Error 0x84B9C429: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Free space on the install drive. 2. Re-register the store app package. 3. Sign out and back into the store account."
+  },
+  {
+    "error_code": "0x8DB0B956",
+    "os_version": "Windows 11",
+    "product": "Permissions",
+    "symptom": "Error 0x8DB0B956: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to inherited permissions removed by policy.",
+    "solution": "1. Identify and stop the locking process. 2. Reset permissions inheritance. 3. Take ownership of the folder."
+  },
+  {
+    "error_code": "0x82931A4C",
+    "os_version": "Windows 11",
+    "product": "Device Drivers",
+    "symptom": "Error 0x82931A4C: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a failed digital signature check.",
+    "solution": "1. Remove the old driver package with pnputil. 2. Roll back the driver in Device Manager. 3. Install the vendor-signed driver manually."
+  },
+  {
+    "error_code": "0x8DB7E9E7",
+    "os_version": "Windows 11",
+    "product": "Windows Update",
+    "symptom": "Error 0x8DB7E9E7: update installation fails partway through.",
+    "cause": "This typically occurs due to a blocked connection to the update servers.",
+    "solution": "1. Run the Update troubleshooter. 2. Run DISM RestoreHealth followed by SFC scannow. 3. Restart the Windows Update service."
+  },
+  {
+    "error_code": "0x8EE9CD56",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x8EE9CD56: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Reset permissions inheritance. 2. Restore the default access control list. 3. Take ownership of the folder."
+  },
+  {
+    "error_code": "0x8339258E",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8339258E: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Install the required framework version. 2. Re-register the framework with the runtime. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x80D1CB7C",
+    "os_version": "Windows 10",
+    "product": "Office Applications",
+    "symptom": "Error 0x80D1CB7C: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to an incomplete application update.",
+    "solution": "1. Start the application in safe mode. 2. Disable all add-ins and re-enable one at a time. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x8A4419F4",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8A4419F4: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a corrupted boot configuration entry.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Rebuild the boot configuration data. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x864D3979",
+    "os_version": "Windows Server 2022",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x864D3979: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to a failing storage controller driver.",
+    "solution": "1. Run chkdsk with repair flags. 2. Update the storage controller driver. 3. Restore the affected files from backup."
+  },
+  {
+    "error_code": "0x83F0749D",
+    "os_version": "Windows 11",
+    "product": "Windows Boot",
+    "symptom": "Error 0x83F0749D: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to an incomplete update applied at shutdown.",
+    "solution": "1. Boot into recovery and run Startup Repair. 2. Uninstall the most recent update from recovery. 3. Rebuild the boot configuration data."
+  },
+  {
+    "error_code": "0x82B20CF1",
+    "os_version": "Windows 10",
+    "product": "Device Drivers",
+    "symptom": "Error 0x82B20CF1: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a conflicting driver left from a prior install.",
+    "solution": "1. Disable driver signature enforcement temporarily. 2. Remove the old driver package with pnputil. 3. Install the vendor-signed driver manually."
+  },
+  {
+    "error_code": "0x8B73A41B",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8B73A41B: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to an incomplete update applied at shutdown.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Boot in safe mode and roll back the driver. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x8542E196",
+    "os_version": "Windows Server 2019",
+    "product": "Permissions",
+    "symptom": "Error 0x8542E196: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Take ownership of the folder. 2. Restore the default access control list. 3. Identify and stop the locking process."
+  },
+  {
+    "error_code": "0x8CF8169B",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8CF8169B: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a missing framework component.",
+    "solution": "1. Repair the framework installation. 2. Run the framework repair tool. 3. Install the required framework version."
+  },
+  {
+    "error_code": "0x8DCECA5F",
+    "os_version": "Windows 10",
+    "product": "Office Applications",
+    "symptom": "Error 0x8DCECA5F: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a damaged template file.",
+    "solution": "1. Rename the default template to force a rebuild. 2. Disable all add-ins and re-enable one at a time. 3. Run an online repair of the installation."
+  },
+  {
+    "error_code": "0x8D59A32A",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8D59A32A: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a driver loaded too early in the boot sequence.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Rebuild the boot configuration data. 3. Boot in safe mode and roll back the driver."
+  },
+  {
+    "error_code": "0x8EBE1BD8",
+    "os_version": "Windows Server 2019",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8EBE1BD8: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to insufficient page file size.",
+    "solution": "1. Identify the leaking process in Resource Monitor. 2. Disable unnecessary startup entries. 3. Increase the page file size."
+  },
+  {
+    "error_code": "0x84E1427B",
+    "os_version": "Windows 11",
+    "product": "Windows Update",
+    "symptom": "Error 0x84E1427B: update installation fails partway through.",
+    "cause": "This typically occurs due to a pending reboot from a prior update.",
+    "solution": "1. Restart the Windows Update service. 2. Run the Update troubleshooter. 3. Clear the SoftwareDistribution folder."
+  },
+  {
+    "error_code": "0x8BE24BCA",
+    "os_version": "Windows 10",
+    "product": "Office Applications",
+    "symptom": "Error 0x8BE24BCA: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Run an online repair of the installation. 2. Start the application in safe mode. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x8C388E69",
+    "os_version": "Windows 11",
+    "product": "Printing",
+    "symptom": "Error 0x8C388E69: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Re-add the printer connection. 2. Stop the spooler and clear the print queue folder. 3. Reinstall the printer driver."
+  },
+  {
+    "error_code": "0x85E2AB29",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x85E2AB29: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a corrupted print job in the queue.",
+    "solution": "1. Reinstall the printer driver. 2. Stop the spooler and clear the print queue folder. 3. Re-add the printer connection."
+  },
+  {
+    "error_code": "0x8647F0BB",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8647F0BB: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a corrupted boot configuration entry.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Uninstall the most recent update from recovery. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x8CFDD24A",
+    "os_version": "Windows Server 2019",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x8CFDD24A: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to bad sectors on the physical disk.",
+    "solution": "1. Run chkdsk with repair flags. 2. Check disk health with SMART diagnostics. 3. Restore the affected files from backup."
+  },
+  {
+    "error_code": "0x854D1349",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x854D1349: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a version mismatch with the application target.",
+    "solution": "1. Install the required framework version. 2. Repair the framework installation. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x89286849",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x89286849: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a corrupted framework installation.",
+    "solution": "1. Repair the framework installation. 2. Run the framework repair tool. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x8A102186",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x8A102186: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Restore the default access control list. 2. Identify and stop the locking process. 3. Take ownership of the folder."
+  },
+  {
+    "error_code": "0x89F7C9E2",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x89F7C9E2: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a corrupted access control list.",
+    "solution": "1. Take ownership of the folder. 2. Restore the default access control list. 3. Reset permissions inheritance."
+  },
+  {
+    "error_code": "0x86A4AABC",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x86A4AABC: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a corrupted print job in the queue.",
+    "solution": "1. Restart the print spooler service. 2. Re-add the printer connection. 3. Stop the spooler and clear the print queue folder."
+  },
+  {
+    "error_code": "0x838E7431",
+    "os_version": "Windows 11",
+    "product": "Printing",
+    "symptom": "Error 0x838E7431: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a corrupted print job in the queue.",
+    "solution": "1. Reinstall the printer driver. 2. Restart the print spooler service. 3. Re-add the printer connection."
+  },
+  {
+    "error_code": "0x8A65FEF9",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x8A65FEF9: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a damaged template file.",
+    "solution": "1. Rename the default template to force a rebuild. 2. Start the application in safe mode. 3. Run an online repair of the installation."
+  },
+  {
+    "error_code": "0x86B119FF",
+    "os_version": "Windows 10",
+    "product": "Networking",
+    "symptom": "Error 0x86B119FF: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to an adapter power-saving setting.",
+    "solution": "1. Disable power management on the adapter. 2. Clear the proxy configuration. 3. Flush the DNS cache."
+  },
+  {
+    "error_code": "0x88BCB1C1",
+    "os_version": "Windows 10",
+    "product": "Device Drivers",
+    "symptom": "Error 0x88BCB1C1: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a failed digital signature check.",
+    "solution": "1. Remove the old driver package with pnputil. 2. Disable driver signature enforcement temporarily. 3. Install the vendor-signed driver manually."
+  },
+  {
+    "error_code": "0x8E8343CB",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8E8343CB: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a corrupted framework installation.",
+    "solution": "1. Run the framework repair tool. 2. Re-register the framework with the runtime. 3. Install the required framework version."
+  },
+  {
+    "error_code": "0x8C1114AF",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Store",
+    "symptom": "Error 0x8C1114AF: app downloads fail to complete.",
+    "cause": "This typically occurs due to insufficient space in the app install location.",
+    "solution": "1. Free space on the install drive. 2. Reset the store cache with wsreset. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x8C9AF9F0",
+    "os_version": "Windows Server 2022",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8C9AF9F0: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a conflicting driver left from a prior install.",
+    "solution": "1. Install the vendor-signed driver manually. 2. Remove the old driver package with pnputil. 3. Roll back the driver in Device Manager."
+  },
+  {
+    "error_code": "0x80F871F5",
+    "os_version": "Windows 10",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x80F871F5: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to a memory leak in a background service.",
+    "solution": "1. Disable unnecessary startup entries. 2. Identify the leaking process in Resource Monitor. 3. Run Windows Memory Diagnostic."
+  },
+  {
+    "error_code": "0x80EAD4D6",
+    "os_version": "Windows 10",
+    "product": "Networking",
+    "symptom": "Error 0x80EAD4D6: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a misconfigured proxy setting.",
+    "solution": "1. Clear the proxy configuration. 2. Disable power management on the adapter. 3. Reset the TCP/IP stack with netsh."
+  },
+  {
+    "error_code": "0x86AFCA5E",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x86AFCA5E: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Run the framework repair tool. 2. Re-register the framework with the runtime. 3. Install the required framework version."
+  },
+  {
+    "error_code": "0x87897996",
+    "os_version": "Windows Server 2019",
+    "product": "Networking",
+    "symptom": "Error 0x87897996: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a corrupted TCP/IP stack.",
+    "solution": "1. Clear the proxy configuration. 2. Reset the TCP/IP stack with netsh. 3. Disable power management on the adapter."
+  },
+  {
+    "error_code": "0x83CCB491",
+    "os_version": "Windows Server 2019",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x83CCB491: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to a failing storage controller driver.",
+    "solution": "1. Restore the affected files from backup. 2. Update the storage controller driver. 3. Run chkdsk with repair flags."
+  },
+  {
+    "error_code": "0x88F66884",
+    "os_version": "Windows 11",
+    "product": "Permissions",
+    "symptom": "Error 0x88F66884: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to broken ownership after a profile migration.",
+    "solution": "1. Take ownership of the folder. 2. Identify and stop the locking process. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x87713DAF",
+    "os_version": "Windows 10",
+    "product": "Permissions",
+    "symptom": "Error 0x87713DAF: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to inherited permissions removed by policy.",
+    "solution": "1. Take ownership of the folder. 2. Identify and stop the locking process. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x8FF69A91",
+    "os_version": "Windows 10",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x8FF69A91: the system reports it is not activated.",
+    "cause": "This typically occurs due to a licensing service that failed to start.",
+    "solution": "1. Run the activation troubleshooter. 2. Re-enter the product key with slmgr. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x851CF591",
+    "os_version": "Windows Server 2019",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x851CF591: the system reports it is not activated.",
+    "cause": "This typically occurs due to an unreachable activation server.",
+    "solution": "1. Run the activation troubleshooter. 2. Restart the licensing service. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x8F4E863A",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x8F4E863A: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a corrupted print job in the queue.",
+    "solution": "1. Restart the print spooler service. 2. Reinstall the printer driver. 3. Re-add the printer connection."
+  },
+  {
+    "error_code": "0x8A965CDA",
+    "os_version": "Windows 11",
+    "product": "Windows Update",
+    "symptom": "Error 0x8A965CDA: update installation fails partway through.",
+    "cause": "This typically occurs due to insufficient disk space on the system partition.",
+    "solution": "1. Clear the SoftwareDistribution folder. 2. Run the Update troubleshooter. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x8A708C7E",
+    "os_version": "Windows 10",
+    "product": "Printing",
+    "symptom": "Error 0x8A708C7E: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to an outdated printer driver.",
+    "solution": "1. Reinstall the printer driver. 2. Restart the print spooler service. 3. Re-add the printer connection."
+  },
+  {
+    "error_code": "0x8B713E95",
+    "os_version": "Windows 10",
+    "product": "Permissions",
+    "symptom": "Error 0x8B713E95: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Restore the default access control list. 2. Identify and stop the locking process. 3. Reset permissions inheritance."
+  },
+  {
+    "error_code": "0x8774F4EB",
+    "os_version": "Windows 11",
+    "product": "Office Applications",
+    "symptom": "Error 0x8774F4EB: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Rename the default template to force a rebuild. 2. Run an online repair of the installation. 3. Disable all add-ins and re-enable one at a time."
+  },
+  {
+    "error_code": "0x82EB2316",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x82EB2316: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to broken ownership after a profile migration.",
+    "solution": "1. Reset permissions inheritance. 2. Take ownership of the folder. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x86F2E1E4",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x86F2E1E4: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Restore the default access control list. 2. Reset permissions inheritance. 3. Take ownership of the folder."
+  },
+  {
+    "error_code": "0x80C80621",
+    "os_version": "Windows 10",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x80C80621: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to a memory leak in a background service.",
+    "solution": "1. Disable unnecessary startup entries. 2. Increase the page file size. 3. Identify the leaking process in Resource Monitor."
+  },
+  {
+    "error_code": "0x819D54DB",
+    "os_version": "Windows Server 2022",
+    "product": "Printing",
+    "symptom": "Error 0x819D54DB: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Re-add the printer connection. 2. Restart the print spooler service. 3. Reinstall the printer driver."
+  },
+  {
+    "error_code": "0x84B35C47",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x84B35C47: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a corrupted access control list.",
+    "solution": "1. Take ownership of the folder. 2. Restore the default access control list. 3. Reset permissions inheritance."
+  },
+  {
+    "error_code": "0x8C77EB48",
+    "os_version": "Windows 10",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8C77EB48: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Install the required framework version. 2. Run the framework repair tool. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x8076231E",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Store",
+    "symptom": "Error 0x8076231E: app downloads fail to complete.",
+    "cause": "This typically occurs due to a signed-out account state.",
+    "solution": "1. Reset the store cache with wsreset. 2. Free space on the install drive. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x861497AA",
+    "os_version": "Windows 11",
+    "product": "Networking",
+    "symptom": "Error 0x861497AA: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to an adapter power-saving setting.",
+    "solution": "1. Reset the TCP/IP stack with netsh. 2. Clear the proxy configuration. 3. Flush the DNS cache."
+  },
+  {
+    "error_code": "0x8815DF1B",
+    "os_version": "Windows Server 2022",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x8815DF1B: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to a failing storage controller driver.",
+    "solution": "1. Update the storage controller driver. 2. Restore the affected files from backup. 3. Check disk health with SMART diagnostics."
+  },
+  {
+    "error_code": "0x89C5F779",
+    "os_version": "Windows Server 2022",
+    "product": "Device Drivers",
+    "symptom": "Error 0x89C5F779: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a failed digital signature check.",
+    "solution": "1. Remove the old driver package with pnputil. 2. Disable driver signature enforcement temporarily. 3. Roll back the driver in Device Manager."
+  },
+  {
+    "error_code": "0x84C786A2",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x84C786A2: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a missing framework component.",
+    "solution": "1. Re-register the framework with the runtime. 2. Install the required framework version. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x8C1266F6",
+    "os_version": "Windows 11",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x8C1266F6: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to bad sectors on the physical disk.",
+    "solution": "1. Restore the affected files from backup. 2. Check disk health with SMART diagnostics. 3. Run chkdsk with repair flags."
+  },
+  {
+    "error_code": "0x83F76C7A",
+    "os_version": "Windows Server 2019",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x83F76C7A: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to a faulty memory module.",
+    "solution": "1. Run Windows Memory Diagnostic. 2. Increase the page file size. 3. Disable unnecessary startup entries."
+  },
+  {
+    "error_code": "0x8BFE3FA6",
+    "os_version": "Windows 10",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x8BFE3FA6: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to bad sectors on the physical disk.",
+    "solution": "1. Restore the affected files from backup. 2. Check disk health with SMART diagnostics. 3. Update the storage controller driver."
+  },
+  {
+    "error_code": "0x8408D946",
+    "os_version": "Windows 11",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8408D946: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Run Windows Memory Diagnostic. 2. Identify the leaking process in Resource Monitor. 3. Increase the page file size."
+  },
+  {
+    "error_code": "0x8A8FFE5B",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8A8FFE5B: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a missing framework component.",
+    "solution": "1. Install the required framework version. 2. Repair the framework installation. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x81210D47",
+    "os_version": "Windows 10",
+    "product": ".NET Framework",
+    "symptom": "Error 0x81210D47: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a corrupted framework installation.",
+    "solution": "1. Repair the framework installation. 2. Run the framework repair tool. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x8EB1FF00",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8EB1FF00: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a version mismatch with the application target.",
+    "solution": "1. Re-register the framework with the runtime. 2. Repair the framework installation. 3. Run the framework repair tool."
+  },
+  {
+    "error_code": "0x8D533476",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Update",
+    "symptom": "Error 0x8D533476: update installation fails partway through.",
+    "cause": "This typically occurs due to corrupted update cache.",
+    "solution": "1. Restart the Windows Update service. 2. Run the Update troubleshooter. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x8CE77921",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x8CE77921: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a damaged template file.",
+    "solution": "1. Start the application in safe mode. 2. Disable all add-ins and re-enable one at a time. 3. Run an online repair of the installation."
+  },
+  {
+    "error_code": "0x8052FDA3",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Update",
+    "symptom": "Error 0x8052FDA3: update installation fails partway through.",
+    "cause": "This typically occurs due to a blocked connection to the update servers.",
+    "solution": "1. Clear the SoftwareDistribution folder. 2. Run DISM RestoreHealth followed by SFC scannow. 3. Restart the Windows Update service."
+  },
+  {
+    "error_code": "0x82815A06",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x82815A06: update installation fails partway through.",
+    "cause": "This typically occurs due to a blocked connection to the update servers.",
+    "solution": "1. Run the Update troubleshooter. 2. Restart the Windows Update service. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x87CAC42B",
+    "os_version": "Windows 11",
+    "product": "Device Drivers",
+    "symptom": "Error 0x87CAC42B: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to an unsigned driver package.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Disable driver signature enforcement temporarily. 3. Remove the old driver package with pnputil."
+  },
+  {
+    "error_code": "0x8CA08EF7",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x8CA08EF7: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Run an online repair of the installation. 2. Rename the default template to force a rebuild. 3. Disable all add-ins and re-enable one at a time."
+  },
+  {
+    "error_code": "0x8C297228",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x8C297228: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Reset permissions inheritance. 2. Restore the default access control list. 3. Take ownership of the folder."
+  },
+  {
+    "error_code": "0x83209EB8",
+    "os_version": "Windows 11",
+    "product": "Office Applications",
+    "symptom": "Error 0x83209EB8: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a damaged template file.",
+    "solution": "1. Start the application in safe mode. 2. Rename the default template to force a rebuild. 3. Run an online repair of the installation."
+  },
+  {
+    "error_code": "0x8D302B2A",
+    "os_version": "Windows Server 2022",
+    "product": "Printing",
+    "symptom": "Error 0x8D302B2A: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a lost connection to the print server.",
+    "solution": "1. Re-add the printer connection. 2. Stop the spooler and clear the print queue folder. 3. Restart the print spooler service."
+  },
+  {
+    "error_code": "0x875C5489",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x875C5489: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a driver loaded too early in the boot sequence.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Rebuild the boot configuration data. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x88D9F2B8",
+    "os_version": "Windows 11",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x88D9F2B8: the system reports it is not activated.",
+    "cause": "This typically occurs due to a mismatched product key edition.",
+    "solution": "1. Restart the licensing service. 2. Re-enter the product key with slmgr. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x8490CACA",
+    "os_version": "Windows 11",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8490CACA: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a damaged system file.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Rebuild the boot configuration data. 3. Uninstall the most recent update from recovery."
+  },
+  {
+    "error_code": "0x86FA5CA9",
+    "os_version": "Windows Server 2019",
+    "product": "Office Applications",
+    "symptom": "Error 0x86FA5CA9: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a damaged template file.",
+    "solution": "1. Rename the default template to force a rebuild. 2. Run an online repair of the installation. 3. Start the application in safe mode."
+  },
+  {
+    "error_code": "0x8CB3650E",
+    "os_version": "Windows 10",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x8CB3650E: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to a failing storage controller driver.",
+    "solution": "1. Check disk health with SMART diagnostics. 2. Update the storage controller driver. 3. Restore the affected files from backup."
+  },
+  {
+    "error_code": "0x8F49784D",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x8F49784D: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a corrupted access control list.",
+    "solution": "1. Restore the default access control list. 2. Take ownership of the folder. 3. Reset permissions inheritance."
+  },
+  {
+    "error_code": "0x8D1B237B",
+    "os_version": "Windows Server 2022",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8D1B237B: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a version mismatch with the application target.",
+    "solution": "1. Install the required framework version. 2. Run the framework repair tool. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x8303877E",
+    "os_version": "Windows 11",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x8303877E: the system reports it is not activated.",
+    "cause": "This typically occurs due to an unreachable activation server.",
+    "solution": "1. Re-enter the product key with slmgr. 2. Restart the licensing service. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x8F39D234",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Update",
+    "symptom": "Error 0x8F39D234: update installation fails partway through.",
+    "cause": "This typically occurs due to insufficient disk space on the system partition.",
+    "solution": "1. Restart the Windows Update service. 2. Run the Update troubleshooter. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x8FBF3EEA",
+    "os_version": "Windows 10",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8FBF3EEA: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a missing framework component.",
+    "solution": "1. Repair the framework installation. 2. Install the required framework version. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x835755AD",
+    "os_version": "Windows 11",
+    "product": "Office Applications",
+    "symptom": "Error 0x835755AD: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Rename the default template to force a rebuild. 2. Start the application in safe mode. 3. Disable all add-ins and re-enable one at a time."
+  },
+  {
+    "error_code": "0x8DC06EDC",
+    "os_version": "Windows 11",
+    "product": "Permissions",
+    "symptom": "Error 0x8DC06EDC: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Take ownership of the folder. 2. Identify and stop the locking process. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x8235BA6E",
+    "os_version": "Windows Server 2019",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8235BA6E: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Identify the leaking process in Resource Monitor. 2. Increase the page file size. 3. Run Windows Memory Diagnostic."
+  },
+  {
+    "error_code": "0x8C3BBE59",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Store",
+    "symptom": "Error 0x8C3BBE59: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Reset the store cache with wsreset. 2. Re-register the store app package. 3. Free space on the install drive."
+  },
+  {
+    "error_code": "0x8935B4CD",
+    "os_version": "Windows Server 2022",
+    "product": "Networking",
+    "symptom": "Error 0x8935B4CD: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a misconfigured proxy setting.",
+    "solution": "1. Reset the TCP/IP stack with netsh. 2. Disable power management on the adapter. 3. Clear the proxy configuration."
+  },
+  {
+    "error_code": "0x855F945A",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x855F945A: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Re-add the printer connection. 2. Reinstall the printer driver. 3. Stop the spooler and clear the print queue folder."
+  },
+  {
+    "error_code": "0x846CFDFD",
+    "os_version": "Windows 10",
+    "product": "Printing",
+    "symptom": "Error 0x846CFDFD: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Re-add the printer connection. 2. Restart the print spooler service. 3. Stop the spooler and clear the print queue folder."
+  },
+  {
+    "error_code": "0x8918795E",
+    "os_version": "Windows 10",
+    "product": "Networking",
+    "symptom": "Error 0x8918795E: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a corrupted TCP/IP stack.",
+    "solution": "1. Clear the proxy configuration. 2. Disable power management on the adapter. 3. Flush the DNS cache."
+  },
+  {
+    "error_code": "0x8B1E6D37",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8B1E6D37: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a version mismatch with the application target.",
+    "solution": "1. Run the framework repair tool. 2. Repair the framework installation. 3. Install the required framework version."
+  },
+  {
+    "error_code": "0x8E376BD5",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8E376BD5: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a damaged system file.",
+    "solution": "1. Rebuild the boot configuration data. 2. Boot into recovery and run Startup Repair. 3. Uninstall the most recent update from recovery."
+  },
+  {
+    "error_code": "0x885A9983",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x885A9983: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a corrupted framework installation.",
+    "solution": "1. Install the required framework version. 2. Re-register the framework with the runtime. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x8474A7CF",
+    "os_version": "Windows Server 2022",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8474A7CF: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Increase the page file size. 2. Run Windows Memory Diagnostic. 3. Disable unnecessary startup entries."
+  },
+  {
+    "error_code": "0x822C8BEF",
+    "os_version": "Windows 10",
+    "product": "Printing",
+    "symptom": "Error 0x822C8BEF: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a lost connection to the print server.",
+    "solution": "1. Reinstall the printer driver. 2. Re-add the printer connection. 3. Stop the spooler and clear the print queue folder."
+  },
+  {
+    "error_code": "0x8B2C6D6F",
+    "os_version": "Windows Server 2019",
+    "product": "Permissions",
+    "symptom": "Error 0x8B2C6D6F: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to inherited permissions removed by policy.",
+    "solution": "1. Identify and stop the locking process. 2. Reset permissions inheritance. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x8FA113E0",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Store",
+    "symptom": "Error 0x8FA113E0: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Reset the store cache with wsreset. 2. Free space on the install drive. 3. Sign out and back into the store account."
+  },
+  {
+    "error_code": "0x8649582B",
+    "os_version": "Windows 11",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x8649582B: the system reports it is not activated.",
+    "cause": "This typically occurs due to a hardware change invalidating the license binding.",
+    "solution": "1. Re-enter the product key with slmgr. 2. Run the activation troubleshooter. 3. Restart the licensing service."
+  },
+  {
+    "error_code": "0x897D2306",
+    "os_version": "Windows 11",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x897D2306: the system reports it is not activated.",
+    "cause": "This typically occurs due to a mismatched product key edition.",
+    "solution": "1. Verify the edition matches the key. 2. Run the activation troubleshooter. 3. Re-enter the product key with slmgr."
+  },
+  {
+    "error_code": "0x80A3D4F2",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x80A3D4F2: update installation fails partway through.",
+    "cause": "This typically occurs due to corrupted update cache.",
+    "solution": "1. Run the Update troubleshooter. 2. Run DISM RestoreHealth followed by SFC scannow. 3. Clear the SoftwareDistribution folder."
+  },
+  {
+    "error_code": "0x8B94C442",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x8B94C442: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to an incomplete application update.",
+    "solution": "1. Start the application in safe mode. 2. Run an online repair of the installation. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x864DE623",
+    "os_version": "Windows Server 2019",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x864DE623: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Increase the page file size. 2. Identify the leaking process in Resource Monitor. 3. Disable unnecessary startup entries."
+  },
+  {
+    "error_code": "0x84782790",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x84782790: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to an incomplete application update.",
+    "solution": "1. Run an online repair of the installation. 2. Start the application in safe mode. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x817FC37F",
+    "os_version": "Windows Server 2019",
+    "product": "Permissions",
+    "symptom": "Error 0x817FC37F: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Take ownership of the folder. 2. Identify and stop the locking process. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x8CDB5F20",
+    "os_version": "Windows 11",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8CDB5F20: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to an unsigned driver package.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Disable driver signature enforcement temporarily. 3. Remove the old driver package with pnputil."
+  },
+  {
+    "error_code": "0x8C9DDC24",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x8C9DDC24: update installation fails partway through.",
+    "cause": "This typically occurs due to insufficient disk space on the system partition.",
+    "solution": "1. Restart the Windows Update service. 2. Clear the SoftwareDistribution folder. 3. Run the Update troubleshooter."
+  },
+  {
+    "error_code": "0x8AC29D71",
+    "os_version": "Windows 10",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8AC29D71: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a failed digital signature check.",
+    "solution": "1. Remove the old driver package with pnputil. 2. Roll back the driver in Device Manager. 3. Disable driver signature enforcement temporarily."
+  },
+  {
+    "error_code": "0x81953040",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Store",
+    "symptom": "Error 0x81953040: app downloads fail to complete.",
+    "cause": "This typically occurs due to an out-of-sync licensing state.",
+    "solution": "1. Sign out and back into the store account. 2. Free space on the install drive. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x84830AD8",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x84830AD8: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a damaged template file.",
+    "solution": "1. Start the application in safe mode. 2. Disable all add-ins and re-enable one at a time. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x8B1F5B58",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8B1F5B58: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a missing framework component.",
+    "solution": "1. Repair the framework installation. 2. Run the framework repair tool. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x8071FBC4",
+    "os_version": "Windows 11",
+    "product": "Windows Update",
+    "symptom": "Error 0x8071FBC4: update installation fails partway through.",
+    "cause": "This typically occurs due to a blocked connection to the update servers.",
+    "solution": "1. Run the Update troubleshooter. 2. Clear the SoftwareDistribution folder. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x8DA82B31",
+    "os_version": "Windows Server 2022",
+    "product": "Networking",
+    "symptom": "Error 0x8DA82B31: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a stale DNS cache.",
+    "solution": "1. Reset the TCP/IP stack with netsh. 2. Flush the DNS cache. 3. Disable power management on the adapter."
+  },
+  {
+    "error_code": "0x899A2E0B",
+    "os_version": "Windows 11",
+    "product": "Printing",
+    "symptom": "Error 0x899A2E0B: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a lost connection to the print server.",
+    "solution": "1. Restart the print spooler service. 2. Re-add the printer connection. 3. Reinstall the printer driver."
+  },
+  {
+    "error_code": "0x8F6740D0",
+    "os_version": "Windows 10",
+    "product": "Office Applications",
+    "symptom": "Error 0x8F6740D0: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to an incomplete application update.",
+    "solution": "1. Disable all add-ins and re-enable one at a time. 2. Run an online repair of the installation. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x8C9367DF",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x8C9367DF: update installation fails partway through.",
+    "cause": "This typically occurs due to corrupted update cache.",
+    "solution": "1. Clear the SoftwareDistribution folder. 2. Run DISM RestoreHealth followed by SFC scannow. 3. Run the Update troubleshooter."
+  },
+  {
+    "error_code": "0x8DBE234C",
+    "os_version": "Windows Server 2022",
+    "product": "Networking",
+    "symptom": "Error 0x8DBE234C: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a misconfigured proxy setting.",
+    "solution": "1. Flush the DNS cache. 2. Disable power management on the adapter. 3. Clear the proxy configuration."
+  },
+  {
+    "error_code": "0x898ACAAE",
+    "os_version": "Windows 11",
+    "product": "Networking",
+    "symptom": "Error 0x898ACAAE: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a misconfigured proxy setting.",
+    "solution": "1. Disable power management on the adapter. 2. Flush the DNS cache. 3. Clear the proxy configuration."
+  },
+  {
+    "error_code": "0x83435EEA",
+    "os_version": "Windows 11",
+    "product": "Windows Store",
+    "symptom": "Error 0x83435EEA: app downloads fail to complete.",
+    "cause": "This typically occurs due to a signed-out account state.",
+    "solution": "1. Free space on the install drive. 2. Reset the store cache with wsreset. 3. Sign out and back into the store account."
+  },
+  {
+    "error_code": "0x8E832591",
+    "os_version": "Windows 10",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x8E832591: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to bad sectors on the physical disk.",
+    "solution": "1. Check disk health with SMART diagnostics. 2. Update the storage controller driver. 3. Run chkdsk with repair flags."
+  },
+  {
+    "error_code": "0x8C19850C",
+    "os_version": "Windows 10",
+    "product": "Office Applications",
+    "symptom": "Error 0x8C19850C: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a damaged template file.",
+    "solution": "1. Rename the default template to force a rebuild. 2. Run an online repair of the installation. 3. Start the application in safe mode."
+  },
+  {
+    "error_code": "0x84301746",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Boot",
+    "symptom": "Error 0x84301746: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a corrupted boot configuration entry.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Rebuild the boot configuration data. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x826E42A3",
+    "os_version": "Windows 11",
+    "product": "Windows Update",
+    "symptom": "Error 0x826E42A3: update installation fails partway through.",
+    "cause": "This typically occurs due to a pending reboot from a prior update.",
+    "solution": "1. Clear the SoftwareDistribution folder. 2. Run the Update troubleshooter. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x8CF0CD5B",
+    "os_version": "Windows Server 2019",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8CF0CD5B: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Increase the page file size. 2. Identify the leaking process in Resource Monitor. 3. Disable unnecessary startup entries."
+  },
+  {
+    "error_code": "0x8179FDF1",
+    "os_version": "Windows 11",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8179FDF1: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a failed digital signature check.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Remove the old driver package with pnputil. 3. Install the vendor-signed driver manually."
+  },
+  {
+    "error_code": "0x870CBFFB",
+    "os_version": "Windows 11",
+    "product": "Networking",
+    "symptom": "Error 0x870CBFFB: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a stale DNS cache.",
+    "solution": "1. Disable power management on the adapter. 2. Reset the TCP/IP stack with netsh. 3. Clear the proxy configuration."
+  },
+  {
+    "error_code": "0x87081FB7",
+    "os_version": "Windows 11",
+    "product": "Office Applications",
+    "symptom": "Error 0x87081FB7: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to an incomplete application update.",
+    "solution": "1. Disable all add-ins and re-enable one at a time. 2. Start the application in safe mode. 3. Run an online repair of the installation."
+  },
+  {
+    "error_code": "0x817CB557",
+    "os_version": "Windows 10",
+    "product": ".NET Framework",
+    "symptom": "Error 0x817CB557: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a version mismatch with the application target.",
+    "solution": "1. Run the framework repair tool. 2. Re-register the framework with the runtime. 3. Install the required framework version."
+  },
+  {
+    "error_code": "0x846F95F1",
+    "os_version": "Windows 11",
+    "product": "Windows Store",
+    "symptom": "Error 0x846F95F1: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Reset the store cache with wsreset. 2. Free space on the install drive. 3. Re-register the store app package."
+  },
+  {
+    "error_code": "0x8F0A64A5",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8F0A64A5: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a corrupted framework installation.",
+    "solution": "1. Run the framework repair tool. 2. Repair the framework installation. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x8B2BC3A9",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8B2BC3A9: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to an incomplete update applied at shutdown.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Boot into recovery and run Startup Repair. 3. Boot in safe mode and roll back the driver."
+  },
+  {
+    "error_code": "0x8A5B75C9",
+    "os_version": "Windows 10",
+    "product": "Permissions",
+    "symptom": "Error 0x8A5B75C9: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a corrupted access control list.",
+    "solution": "1. Identify and stop the locking process. 2. Take ownership of the folder. 3. Restore the default access control list."
+  },
+  {
+    "error_code": "0x815A73F4",
+    "os_version": "Windows 11",
+    "product": "Windows Store",
+    "symptom": "Error 0x815A73F4: app downloads fail to complete.",
+    "cause": "This typically occurs due to insufficient space in the app install location.",
+    "solution": "1. Re-register the store app package. 2. Free space on the install drive. 3. Reset the store cache with wsreset."
+  },
+  {
+    "error_code": "0x852AE086",
+    "os_version": "Windows Server 2019",
+    "product": "Office Applications",
+    "symptom": "Error 0x852AE086: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to an incomplete application update.",
+    "solution": "1. Disable all add-ins and re-enable one at a time. 2. Run an online repair of the installation. 3. Start the application in safe mode."
+  },
+  {
+    "error_code": "0x801CED5D",
+    "os_version": "Windows Server 2022",
+    "product": "Windows Boot",
+    "symptom": "Error 0x801CED5D: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a corrupted boot configuration entry.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Rebuild the boot configuration data. 3. Uninstall the most recent update from recovery."
+  },
+  {
+    "error_code": "0x875E2190",
+    "os_version": "Windows 10",
+    "product": "Printing",
+    "symptom": "Error 0x875E2190: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to an outdated printer driver.",
+    "solution": "1. Reinstall the printer driver. 2. Restart the print spooler service. 3. Stop the spooler and clear the print queue folder."
+  },
+  {
+    "error_code": "0x8C522AF0",
+    "os_version": "Windows Server 2022",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8C522AF0: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a version mismatch with the current OS build.",
+    "solution": "1. Disable driver signature enforcement temporarily. 2. Install the vendor-signed driver manually. 3. Roll back the driver in Device Manager."
+  },
+  {
+    "error_code": "0x83A66D89",
+    "os_version": "Windows 10",
+    "product": "Windows Update",
+    "symptom": "Error 0x83A66D89: update installation fails partway through.",
+    "cause": "This typically occurs due to a pending reboot from a prior update.",
+    "solution": "1. Restart the Windows Update service. 2. Clear the SoftwareDistribution folder. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x8F41B0D2",
+    "os_version": "Windows 11",
+    "product": "Windows Store",
+    "symptom": "Error 0x8F41B0D2: app downloads fail to complete.",
+    "cause": "This typically occurs due to a corrupted store cache.",
+    "solution": "1. Re-register the store app package. 2. Free space on the install drive. 3. Sign out and back into the store account."
+  },
+  {
+    "error_code": "0x86592F39",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Update",
+    "symptom": "Error 0x86592F39: update installation fails partway through.",
+    "cause": "This typically occurs due to corrupted update cache.",
+    "solution": "1. Run DISM RestoreHealth followed by SFC scannow. 2. Run the Update troubleshooter. 3. Restart the Windows Update service."
+  },
+  {
+    "error_code": "0x8C5BCB5E",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x8C5BCB5E: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a locked file held by a background service.",
+    "solution": "1. Take ownership of the folder. 2. Reset permissions inheritance. 3. Identify and stop the locking process."
+  },
+  {
+    "error_code": "0x881432BD",
+    "os_version": "Windows Server 2022",
+    "product": "Networking",
+    "symptom": "Error 0x881432BD: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to an adapter power-saving setting.",
+    "solution": "1. Reset the TCP/IP stack with netsh. 2. Disable power management on the adapter. 3. Flush the DNS cache."
+  },
+  {
+    "error_code": "0x8F7F92C1",
+    "os_version": "Windows 11",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8F7F92C1: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a corrupted framework installation.",
+    "solution": "1. Install the required framework version. 2. Repair the framework installation. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x8641D2D6",
+    "os_version": "Windows Server 2019",
+    "product": "Networking",
+    "symptom": "Error 0x8641D2D6: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a stale DNS cache.",
+    "solution": "1. Reset the TCP/IP stack with netsh. 2. Disable power management on the adapter. 3. Clear the proxy configuration."
+  },
+  {
+    "error_code": "0x8CCA8E0D",
+    "os_version": "Windows 11",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8CCA8E0D: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a corrupted boot configuration entry.",
+    "solution": "1. Boot into recovery and run Startup Repair. 2. Rebuild the boot configuration data. 3. Boot in safe mode and roll back the driver."
+  },
+  {
+    "error_code": "0x839BD8CF",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Boot",
+    "symptom": "Error 0x839BD8CF: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to an incomplete update applied at shutdown.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Boot into recovery and run Startup Repair. 3. Uninstall the most recent update from recovery."
+  },
+  {
+    "error_code": "0x8C1CA71F",
+    "os_version": "Windows Server 2019",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8C1CA71F: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a conflicting driver left from a prior install.",
+    "solution": "1. Install the vendor-signed driver manually. 2. Remove the old driver package with pnputil. 3. Roll back the driver in Device Manager."
+  },
+  {
+    "error_code": "0x88F3749E",
+    "os_version": "Windows 10",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x88F3749E: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to bad sectors on the physical disk.",
+    "solution": "1. Restore the affected files from backup. 2. Check disk health with SMART diagnostics. 3. Update the storage controller driver."
+  },
+  {
+    "error_code": "0x86DFB152",
+    "os_version": "Windows 11",
+    "product": "Printing",
+    "symptom": "Error 0x86DFB152: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Reinstall the printer driver. 2. Re-add the printer connection. 3. Restart the print spooler service."
+  },
+  {
+    "error_code": "0x866171E1",
+    "os_version": "Windows Server 2019",
+    "product": "Device Drivers",
+    "symptom": "Error 0x866171E1: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to a conflicting driver left from a prior install.",
+    "solution": "1. Install the vendor-signed driver manually. 2. Disable driver signature enforcement temporarily. 3. Roll back the driver in Device Manager."
+  },
+  {
+    "error_code": "0x8C307BFE",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x8C307BFE: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a corrupted print job in the queue.",
+    "solution": "1. Restart the print spooler service. 2. Re-add the printer connection. 3. Reinstall the printer driver."
+  },
+  {
+    "error_code": "0x8290C156",
+    "os_version": "Windows 11",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x8290C156: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to an interrupted write during shutdown.",
+    "solution": "1. Check disk health with SMART diagnostics. 2. Restore the affected files from backup. 3. Run chkdsk with repair flags."
+  },
+  {
+    "error_code": "0x8D00F450",
+    "os_version": "Windows Server 2019",
+    "product": "Permissions",
+    "symptom": "Error 0x8D00F450: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a corrupted access control list.",
+    "solution": "1. Reset permissions inheritance. 2. Restore the default access control list. 3. Identify and stop the locking process."
+  },
+  {
+    "error_code": "0x8BE86E9C",
+    "os_version": "Windows Server 2019",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x8BE86E9C: the system reports it is not activated.",
+    "cause": "This typically occurs due to an unreachable activation server.",
+    "solution": "1. Run the activation troubleshooter. 2. Verify the edition matches the key. 3. Restart the licensing service."
+  },
+  {
+    "error_code": "0x83F2A8A8",
+    "os_version": "Windows 11",
+    "product": "Permissions",
+    "symptom": "Error 0x83F2A8A8: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to inherited permissions removed by policy.",
+    "solution": "1. Identify and stop the locking process. 2. Restore the default access control list. 3. Reset permissions inheritance."
+  },
+  {
+    "error_code": "0x871CA40F",
+    "os_version": "Windows Server 2022",
+    "product": ".NET Framework",
+    "symptom": "Error 0x871CA40F: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Run the framework repair tool. 2. Install the required framework version. 3. Re-register the framework with the runtime."
+  },
+  {
+    "error_code": "0x816A7FB9",
+    "os_version": "Windows Server 2019",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x816A7FB9: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to a memory leak in a background service.",
+    "solution": "1. Increase the page file size. 2. Run Windows Memory Diagnostic. 3. Identify the leaking process in Resource Monitor."
+  },
+  {
+    "error_code": "0x8485A27B",
+    "os_version": "Windows Server 2022",
+    "product": "Printing",
+    "symptom": "Error 0x8485A27B: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to an outdated printer driver.",
+    "solution": "1. Restart the print spooler service. 2. Reinstall the printer driver. 3. Re-add the printer connection."
+  },
+  {
+    "error_code": "0x889E3F12",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x889E3F12: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to an incomplete application update.",
+    "solution": "1. Rename the default template to force a rebuild. 2. Start the application in safe mode. 3. Run an online repair of the installation."
+  },
+  {
+    "error_code": "0x81446ADE",
+    "os_version": "Windows 10",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x81446ADE: the system reports it is not activated.",
+    "cause": "This typically occurs due to a mismatched product key edition.",
+    "solution": "1. Restart the licensing service. 2. Verify the edition matches the key. 3. Run the activation troubleshooter."
+  },
+  {
+    "error_code": "0x85A10E86",
+    "os_version": "Windows Server 2022",
+    "product": "Office Applications",
+    "symptom": "Error 0x85A10E86: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a faulty add-in.",
+    "solution": "1. Disable all add-ins and re-enable one at a time. 2. Run an online repair of the installation. 3. Start the application in safe mode."
+  },
+  {
+    "error_code": "0x8DDCDFC0",
+    "os_version": "Windows Server 2019",
+    "product": "Device Drivers",
+    "symptom": "Error 0x8DDCDFC0: a device stops responding after a driver update.",
+    "cause": "This typically occurs due to an unsigned driver package.",
+    "solution": "1. Roll back the driver in Device Manager. 2. Install the vendor-signed driver manually. 3. Disable driver signature enforcement temporarily."
+  },
+  {
+    "error_code": "0x860077B9",
+    "os_version": "Windows Server 2019",
+    "product": "Office Applications",
+    "symptom": "Error 0x860077B9: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Disable all add-ins and re-enable one at a time. 2. Start the application in safe mode. 3. Rename the default template to force a rebuild."
+  },
+  {
+    "error_code": "0x8199EAD4",
+    "os_version": "Windows 11",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8199EAD4: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to a driver loaded too early in the boot sequence.",
+    "solution": "1. Uninstall the most recent update from recovery. 2. Rebuild the boot configuration data. 3. Boot in safe mode and roll back the driver."
+  },
+  {
+    "error_code": "0x80774605",
+    "os_version": "Windows Server 2022",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x80774605: the system reports it is not activated.",
+    "cause": "This typically occurs due to an unreachable activation server.",
+    "solution": "1. Run the activation troubleshooter. 2. Restart the licensing service. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x8113013D",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x8113013D: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Re-register the framework with the runtime. 2. Install the required framework version. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x84609D38",
+    "os_version": "Windows 10",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x84609D38: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to a faulty memory module.",
+    "solution": "1. Increase the page file size. 2. Disable unnecessary startup entries. 3. Identify the leaking process in Resource Monitor."
+  },
+  {
+    "error_code": "0x83F6686B",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x83F6686B: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to an incomplete update applied at shutdown.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Rebuild the boot configuration data. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x8FA70023",
+    "os_version": "Windows 10",
+    "product": "Networking",
+    "symptom": "Error 0x8FA70023: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a stale DNS cache.",
+    "solution": "1. Clear the proxy configuration. 2. Flush the DNS cache. 3. Disable power management on the adapter."
+  },
+  {
+    "error_code": "0x87E98E13",
+    "os_version": "Windows Server 2019",
+    "product": "Disk and Filesystem",
+    "symptom": "Error 0x87E98E13: file operations fail with an I/O error.",
+    "cause": "This typically occurs due to an interrupted write during shutdown.",
+    "solution": "1. Check disk health with SMART diagnostics. 2. Run chkdsk with repair flags. 3. Update the storage controller driver."
+  },
+  {
+    "error_code": "0x8331045A",
+    "os_version": "Windows 10",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x8331045A: the system reports it is not activated.",
+    "cause": "This typically occurs due to an unreachable activation server.",
+    "solution": "1. Re-enter the product key with slmgr. 2. Restart the licensing service. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x853CCE8C",
+    "os_version": "Windows 10",
+    "product": "Office Applications",
+    "symptom": "Error 0x853CCE8C: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to a corrupted user profile.",
+    "solution": "1. Rename the default template to force a rebuild. 2. Disable all add-ins and re-enable one at a time. 3. Start the application in safe mode."
+  },
+  {
+    "error_code": "0x8153DFE5",
+    "os_version": "Windows 11",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8153DFE5: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to excessive startup applications.",
+    "solution": "1. Disable unnecessary startup entries. 2. Increase the page file size. 3. Identify the leaking process in Resource Monitor."
+  },
+  {
+    "error_code": "0x83DE128A",
+    "os_version": "Windows Server 2019",
+    "product": "Printing",
+    "symptom": "Error 0x83DE128A: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Stop the spooler and clear the print queue folder. 2. Reinstall the printer driver. 3. Re-add the printer connection."
+  },
+  {
+    "error_code": "0x87FBC410",
+    "os_version": "Windows Server 2022",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x87FBC410: the system reports it is not activated.",
+    "cause": "This typically occurs due to a licensing service that failed to start.",
+    "solution": "1. Restart the licensing service. 2. Re-enter the product key with slmgr. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x8FA7A817",
+    "os_version": "Windows 10",
+    "product": "Windows Boot",
+    "symptom": "Error 0x8FA7A817: the system fails to reach the desktop and shows a stop screen.",
+    "cause": "This typically occurs due to an incomplete update applied at shutdown.",
+    "solution": "1. Boot in safe mode and roll back the driver. 2. Rebuild the boot configuration data. 3. Boot into recovery and run Startup Repair."
+  },
+  {
+    "error_code": "0x8E2FEA3F",
+    "os_version": "Windows Server 2022",
+    "product": "Printing",
+    "symptom": "Error 0x8E2FEA3F: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a stalled print spooler service.",
+    "solution": "1. Stop the spooler and clear the print queue folder. 2. Re-add the printer connection. 3. Restart the print spooler service."
+  },
+  {
+    "error_code": "0x80296EAB",
+    "os_version": "Windows Server 2019",
+    "product": ".NET Framework",
+    "symptom": "Error 0x80296EAB: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Repair the framework installation. 2. Re-register the framework with the runtime. 3. Install the required framework version."
+  },
+  {
+    "error_code": "0x8BE3370A",
+    "os_version": "Windows Server 2019",
+    "product": "Memory and Performance",
+    "symptom": "Error 0x8BE3370A: the system becomes unresponsive under moderate load.",
+    "cause": "This typically occurs due to a memory leak in a background service.",
+    "solution": "1. Run Windows Memory Diagnostic. 2. Disable unnecessary startup entries. 3. Increase the page file size."
+  },
+  {
+    "error_code": "0x85F4D386",
+    "os_version": "Windows 11",
+    "product": "Windows Update",
+    "symptom": "Error 0x85F4D386: update installation fails partway through.",
+    "cause": "This typically occurs due to a pending reboot from a prior update.",
+    "solution": "1. Run the Update troubleshooter. 2. Clear the SoftwareDistribution folder. 3. Run DISM RestoreHealth followed by SFC scannow."
+  },
+  {
+    "error_code": "0x8A3D13EE",
+    "os_version": "Windows 10",
+    "product": "Networking",
+    "symptom": "Error 0x8A3D13EE: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to an adapter power-saving setting.",
+    "solution": "1. Reset the TCP/IP stack with netsh. 2. Clear the proxy configuration. 3. Flush the DNS cache."
+  },
+  {
+    "error_code": "0x8F5543CA",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Store",
+    "symptom": "Error 0x8F5543CA: app downloads fail to complete.",
+    "cause": "This typically occurs due to a signed-out account state.",
+    "solution": "1. Free space on the install drive. 2. Sign out and back into the store account. 3. Reset the store cache with wsreset."
+  },
+  {
+    "error_code": "0x89E44D9A",
+    "os_version": "Windows Server 2019",
+    "product": "Office Applications",
+    "symptom": "Error 0x89E44D9A: the application closes unexpectedly when opening a document.",
+    "cause": "This typically occurs due to an incomplete application update.",
+    "solution": "1. Disable all add-ins and re-enable one at a time. 2. Start the application in safe mode. 3. Run an online repair of the installation."
+  },
+  {
+    "error_code": "0x845A3BFD",
+    "os_version": "Windows 10",
+    "product": "Permissions",
+    "symptom": "Error 0x845A3BFD: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to broken ownership after a profile migration.",
+    "solution": "1. Identify and stop the locking process. 2. Reset permissions inheritance. 3. Take ownership of the folder."
+  },
+  {
+    "error_code": "0x84116859",
+    "os_version": "Windows Server 2019",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x84116859: the system reports it is not activated.",
+    "cause": "This typically occurs due to a licensing service that failed to start.",
+    "solution": "1. Re-enter the product key with slmgr. 2. Run the activation troubleshooter. 3. Verify the edition matches the key."
+  },
+  {
+    "error_code": "0x81BE37C7",
+    "os_version": "Windows Server 2022",
+    "product": ".NET Framework",
+    "symptom": "Error 0x81BE37C7: an application fails to launch with a runtime error.",
+    "cause": "This typically occurs due to a failed security update.",
+    "solution": "1. Run the framework repair tool. 2. Re-register the framework with the runtime. 3. Repair the framework installation."
+  },
+  {
+    "error_code": "0x8A1086E7",
+    "os_version": "Windows 11",
+    "product": "Activation and Licensing",
+    "symptom": "Error 0x8A1086E7: the system reports it is not activated.",
+    "cause": "This typically occurs due to an unreachable activation server.",
+    "solution": "1. Re-enter the product key with slmgr. 2. Verify the edition matches the key. 3. Run the activation troubleshooter."
+  },
+  {
+    "error_code": "0x852553C1",
+    "os_version": "Windows 11",
+    "product": "Printing",
+    "symptom": "Error 0x852553C1: print jobs remain queued and never complete.",
+    "cause": "This typically occurs due to a corrupted print job in the queue.",
+    "solution": "1. Re-add the printer connection. 2. Restart the print spooler service. 3. Reinstall the printer driver."
+  },
+  {
+    "error_code": "0x880AE414",
+    "os_version": "Windows Server 2019",
+    "product": "Windows Store",
+    "symptom": "Error 0x880AE414: app downloads fail to complete.",
+    "cause": "This typically occurs due to a signed-out account state.",
+    "solution": "1. Re-register the store app package. 2. Free space on the install drive. 3. Reset the store cache with wsreset."
+  },
+  {
+    "error_code": "0x8B2A7525",
+    "os_version": "Windows 10",
+    "product": "Windows Store",
+    "symptom": "Error 0x8B2A7525: app downloads fail to complete.",
+    "cause": "This typically occurs due to insufficient space in the app install location.",
+    "solution": "1. Free space on the install drive. 2. Re-register the store app package. 3. Sign out and back into the store account."
+  },
+  {
+    "error_code": "0x86AAB96F",
+    "os_version": "Windows Server 2022",
+    "product": "Networking",
+    "symptom": "Error 0x86AAB96F: network connectivity drops intermittently.",
+    "cause": "This typically occurs due to a misconfigured proxy setting.",
+    "solution": "1. Flush the DNS cache. 2. Clear the proxy configuration. 3. Reset the TCP/IP stack with netsh."
+  },
+  {
+    "error_code": "0x871AC3C8",
+    "os_version": "Windows Server 2022",
+    "product": "Permissions",
+    "symptom": "Error 0x871AC3C8: access to a folder is denied despite administrator rights.",
+    "cause": "This typically occurs due to a corrupted access control list.",
+    "solution": "1. Identify and stop the locking process. 2. Take ownership of the folder. 3. Reset permissions inheritance."
+  }
+]
