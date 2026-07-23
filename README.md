@@ -1,3 +1,5 @@
+**[Live demo](https://ms-error-rag.onrender.com)** — free tier, first request after
+inactivity takes ~50 seconds to wake.
 # Windows Error Assistant
 
 A retrieval-augmented question answering system over a synthetic Windows error
