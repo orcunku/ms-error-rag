@@ -15,7 +15,7 @@ class Retriever:
             self.chunks = json.load(f)
 
         self.model = TextEmbedding(model_name=config.EMBED_MODEL)
-        self.embeddings = np.array(list(self.model.embed([c["text"] for c in self.chunks])))
+        self.embeddings = np.load(config.ROOT / "data" / "embeddings.npy")
         self.bm25 = BM25Okapi([tokenize(c["text"]) for c in self.chunks])
 
     def encode(self, text):
