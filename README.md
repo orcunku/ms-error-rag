@@ -1,3 +1,4 @@
+![Retrieval Evaluation](https://github.com/orcunku/ms-error-rag/actions/workflows/eval.yml/badge.svg)
 **[Live demo](https://ms-error-rag.onrender.com)** — free tier, first request after
 inactivity takes ~50 seconds to wake.
 # Windows Error Assistant
